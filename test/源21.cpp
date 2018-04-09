@@ -1,30 +1,36 @@
 #include <iostream>
-#include <cstdio>
+#include <vector>
 
 using namespace std;
 
+void mergeSort(vector<int> &v,int begin,int end) {
+	if (begin == end)
+		return;
+	int mid = (begin + end) / 2;
+	mergeSort(v, begin, mid);
+	mergeSort(v, mid + 1, end);
+	vector<int> temp;
+	int i = begin;
+	int j = mid + 1;
+	while (i<=mid&&j<=end)
+	{
+		if (v[i] > v[j])
+			temp.push_back(v[j++]);
+		else
+			temp.push_back(v[i++]);
+	}
+	for (; i <= mid; ++i)
+		temp.push_back(v[i]);
+	for (; j <= end; ++j)
+		temp.push_back(v[j]);
+	for (int i = 0; i < temp.size(); ++i) {
+		v[begin + i] = temp[i];
+	}
+}
 int main() {
-	//while (true)
-	//{
-	//	int len;
-	//	int l[2],n[2];
-	//	cin >> len;
-	//	int result = 0;
-	//	vector<int> v(len+1,0);
-	//	/*cin >> l[0] >> n[0] >> l[1] >> n[1];
-	//	for (int i = 0; i < 2; i++)
-		/*{
-			for (int j = 1; j <= len; j++)
-			{
-				if (j + l[i] == len)
-					v[j] = v[j - 1] + 1;
-				else
-					v[j] = v[j - 1];
-			}
-		}
-		cout << v[len - 1];
-	}*/
-	int b = 1e9 + 7 > INT_MAX ? 1 : 0;
-	cout << b << endl;
+	vector<int> v = { 9,1,4,3,2,5,8,7,6 };
+	mergeSort(v, 0, v.size() - 1);
+	for (auto i : v)
+		cout << i << "\t";
 	return 0;
 }

@@ -29,6 +29,7 @@ string PrintMinNumber(vector<int> numbers) {
 	for (auto i : numbers)
 		cout << i << "\t";
 	string s;
+	
 	for (int i = 0; i < numbers.size(); ++i) {
 		s.append(to_string(numbers[i]));
 	}
