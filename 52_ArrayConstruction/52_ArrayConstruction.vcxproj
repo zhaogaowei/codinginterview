@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{E039471A-04C0-44D5-895A-B27A2B8036DA}</ProjectGuid>
-    <RootNamespace>My43_DicesProbability</RootNamespace>
+    <ProjectGuid>{FD2162A8-9F9B-4F44-B9EC-002812860D01}</ProjectGuid>
+    <RootNamespace>My52_ArrayConstruction</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

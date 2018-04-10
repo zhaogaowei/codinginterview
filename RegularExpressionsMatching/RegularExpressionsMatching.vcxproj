@@ -20,9 +20,10 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{E039471A-04C0-44D5-895A-B27A2B8036DA}</ProjectGuid>
-    <RootNamespace>My43_DicesProbability</RootNamespace>
+    <ProjectGuid>{6EDA29E4-CD73-4F22-A57F-578BCB43895D}</ProjectGuid>
+    <RootNamespace>RegularExpressionsMatching</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <ProjectName>53_RegularExpressionsMatching</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
